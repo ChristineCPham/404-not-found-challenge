@@ -1,6 +1,6 @@
 *.sketch
 *.xd
 *.fig
-.README
+*.md
 .DS_Store
 /design
