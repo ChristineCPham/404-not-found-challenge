@@ -7,14 +7,18 @@ header {
     color: #333;
     font-size: 1rem;
     text-transform: uppercase;
+    margin: 5%;
 }
 
 img {
-    width: 40%;
+    width: 90%;
+    display: block;
+    margin: 20% 5%;
 }
 
 .text {
     font-family: 'Space Mono', monospace;
+    margin: 10% auto;
 }
 
 h1 {
@@ -35,7 +39,8 @@ button {
     font-size: .58rem;
     border-style: none;
     text-align: center;
-    padding: 1em 1.8em;
+    padding: 1.5em 2.6em;
+
 }
 
 button a {
@@ -44,10 +49,16 @@ button a {
     text-transform: uppercase;
 }
 
+footer {
+    display: flex;
+    justify-content: center;
+}
+
 footer p {
     font-family: 'Montserrat', sans-serif;
     color: #bdbdbd;
     font-weight: 500;
-    text-align: center;
     font-size: .58rem;
+    position: absolute;
+    bottom: 0;
 }
