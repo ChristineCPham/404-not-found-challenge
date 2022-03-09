@@ -1,4 +1,53 @@
+body {
+    margin: 5%;
+}
+
+header {
+    font-family: 'Inconsolata', monospace;
+    color: #333;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
 
 img {
     width: 40%;
+}
+
+.text {
+    font-family: 'Space Mono', monospace;
+}
+
+h1 {
+    color: #333;
+    font-weight: 700;
+    font-size: 2.6rem;
+}
+
+p {
+    color: #333;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+button {
+    background-color: #4f4f4f;
+    font-weight: 700;
+    font-size: .58rem;
+    border-style: none;
+    text-align: center;
+    padding: 1em 1.8em;
+}
+
+button a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+footer p {
+    font-family: 'Montserrat', sans-serif;
+    color: #bdbdbd;
+    font-weight: 500;
+    text-align: center;
+    font-size: .58rem;
 }
