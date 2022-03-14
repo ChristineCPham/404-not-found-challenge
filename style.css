@@ -54,11 +54,27 @@ footer {
     justify-content: center;
 }
 
+
 footer p {
     font-family: 'Montserrat', sans-serif;
     color: #bdbdbd;
     font-weight: 500;
     font-size: .58rem;
+}
+
+/*When page width gets too big, content overflows into footer
     position: absolute;
     bottom: 0;
+*/
+
+@media screen and (min-width: 500px) {
+    .main-content {
+        display: flex;
+        margin: 0 5%;
+    }
+
+    img {
+        width: 40%;
+        margin: auto 5%;
+    }
 }
