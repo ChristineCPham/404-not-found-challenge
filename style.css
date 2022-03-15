@@ -1,13 +1,18 @@
 body {
-    margin: 5%;
+    margin: 1% 5%;
 }
 
 header {
     font-family: 'Inconsolata', monospace;
+    font-weight: 700;
     color: #333;
     font-size: 1rem;
     text-transform: uppercase;
-    margin: 5%;
+    margin: 2%;
+}
+
+header p {
+    margin: 0;
 }
 
 img {
@@ -27,33 +32,34 @@ h1 {
     font-size: 2.6rem;
 }
 
-p {
-    color: #333;
+section p {
+    color: #4F4F4F;
     font-weight: 400;
-    font-size: 1rem;
+    font-size: 1.15rem;
+    line-height: 2;
+    margin: 10% auto;
 }
 
-button {
+/*Margin issues*/
+
+.button {
     background-color: #4f4f4f;
-    font-weight: 700;
-    font-size: .58rem;
-    border-style: none;
-    text-align: center;
-    padding: 1.5em 2.6em;
-
-}
-
-button a {
     color: white;
     text-decoration: none;
     text-transform: uppercase;
+    font-weight: 700;
+    font-size: .85rem;
+    text-align: center;
+    padding: 1rem 2rem;
+    margin: 10% 0;
+    width: fit-content;
 }
 
 footer {
     display: flex;
     justify-content: center;
+    margin-top: 5%;
 }
-
 
 footer p {
     font-family: 'Montserrat', sans-serif;
@@ -62,19 +68,34 @@ footer p {
     font-size: .58rem;
 }
 
-/*When page width gets too big, content overflows into footer
-    position: absolute;
-    bottom: 0;
-*/
-
 @media screen and (min-width: 500px) {
     .main-content {
         display: flex;
-        margin: 0 5%;
+        margin: 5% 0;
+    }
+
+    .text h1 {
+        margin: 0;
+    }
+
+    section .text {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    section p {
+        margin-right: 30%;
     }
 
     img {
         width: 40%;
         margin: auto 5%;
+    }
+
+    footer p {
+        position: absolute;
+        bottom: 0;
     }
 }
